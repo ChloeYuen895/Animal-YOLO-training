@@ -1,0 +1,38 @@
+# Requirements for "Animal YOLO" project with GPU support
+# 
+# INSTALLATION STEPS:
+# 
+# 1. Install PyTorch with CUDA support first:
+#    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# 
+# 2. Install remaining dependencies:
+#    pip install -r requirements.txt
+#
+# 3. Verify CUDA setup (recommended):
+#    python check_cuda.py
+#
+# Hardware: NVIDIA GeForce RTX 4050 (CUDA 12.8 drivers, PyTorch CUDA 11.8 compatible)
+
+# Core YOLO / deep learning
+ultralytics>=8.0          # YOLOv8 framework
+# NOTE: Install torch with CUDA using the command above, not from this file
+
+# Computer vision / data handling
+# IMPORTANT: numpy<2 required for torch 2.1.2 compatibility
+numpy>=1.21.2,<2.0        # numpy 1.x required for torch 2.1.2 binary compatibility
+opencv-python>=4.5,<4.12  # opencv 4.11.x compatible with numpy 1.x
+pandas
+Pillow
+
+# Training/augmentation/metrics
+albumentations
+scikit-learn
+tqdm
+PyYAML
+tensorboard
+
+# Utilities / optional
+matplotlib
+seaborn
+thop                     # optional: FLOPs / params profiling
+roboflow                 # optional: if using Roboflow datasets / APIs
