@@ -1,6 +1,9 @@
 .venv/
 Ocean Park Animal Detector.v1-animal-dataset-v1.yolov8/
 Ocean Park Animal Detector.v1-animal-dataset-v1.yolov8.zip
+Ocean Park Animal Detector.v2i.yolov8/
+Ocean Park Animal Detector.v2i.yolov8.zip
+__pycache__/
 runs/
 yolov8n.pt
 yolov11.pt

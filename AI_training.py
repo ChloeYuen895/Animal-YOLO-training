@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
     # Train on your dataset
     results = model.train(
-        data='Ocean Park Animal Detector.v1-animal-dataset-v1.yolov8\data.yaml',
+        data='Ocean Park Animal Detector.v2i.yolov8\data.yaml',
         epochs=75,          # Increased to 100 for more training
         imgsz=640,          # Standard image size for YOLOv8
         batch=10,            # Increased batch size for better training
